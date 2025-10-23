@@ -1,0 +1,78 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Oct 24 01:23:44 2025
+| Host         : Izen-Pavillion running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file decayTimerTest_control_sets_placed.rpt
+| Design       : decayTimerTest
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    11 |
+| Unused register locations in slices containing registers |    36 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      8 |            1 |
+|     10 |            2 |
+|    16+ |            7 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              58 |           15 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             112 |           15 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             122 |           23 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+----------------------------+--------------------------------+------------------+----------------+
+|        Clock Signal       |        Enable Signal       |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++---------------------------+----------------------------+--------------------------------+------------------+----------------+
+|  prevScore_reg[7]_i_3_n_0 |                            |                                |                1 |              2 |
+|  clk_IBUF_BUFG            |                            | bruh/ledarr[7]_i_1_n_0         |                1 |              8 |
+|  prevScore_reg[7]_i_3_n_0 | bruh/totalTicksInRound0__0 | bruh/totalTicksInRound[8]      |                4 |             10 |
+|  prevScore_reg[7]_i_3_n_0 | bruh/LEDsLeft[4]_i_2_n_0   | bruh/LEDsLeft[4]_i_1_n_0       |                1 |             10 |
+|  clk_IBUF_BUFG            | btnC_pressed               | btnL_IBUF                      |                3 |             16 |
+|  bruh/_leddimmer/_/_/CLK  |                            |                                |                4 |             18 |
+|  prevScore_reg[7]_i_3_n_0 | bruh/ticksLeft[15]_i_1_n_0 | bruh/ticksPerLED_0             |                5 |             32 |
+|  clk_IBUF_BUFG            |                            |                                |               10 |             38 |
+|  clk_IBUF_BUFG            |                            | bruh/_5khzclk/SLOW_CLOCK       |                7 |             52 |
+|  clk_IBUF_BUFG            |                            | bruh/_leddimmer/_/_/SLOW_CLOCK |                7 |             52 |
+|  prevScore_reg[7]_i_3_n_0 | bruh/totalTicksInRound0__0 | bruh/ticksPerLED_0             |               10 |             54 |
++---------------------------+----------------------------+--------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,17 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 7c613498ad7149f3bc61a711c7f31bf1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot decayingRoundTimerSimSrc_behav xil_defaultlib.decayingRoundTimerSimSrc xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/sources_1/new/clk_1khz.v" Line 1. Module clk_1khz doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_1khz
+Compiling module xil_defaultlib.pwmGen
+Compiling module xil_defaultlib.ledDimmer
+Compiling module xil_defaultlib.decayingRoundTimer
+Compiling module xil_defaultlib.decayingRoundTimerSimSrc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot decayingRoundTimerSimSrc_behav

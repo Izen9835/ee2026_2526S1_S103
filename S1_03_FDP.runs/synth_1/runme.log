@@ -1,0 +1,391 @@
+
+*** Running vivado
+    with args -log decayTimerTest.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source decayTimerTest.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source decayTimerTest.tcl -notrace
+Command: synth_design -top decayTimerTest -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2444 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 356.234 ; gain = 99.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'decayTimerTest' [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/sources_1/new/decayTimerTest.v:7]
+INFO: [Synth 8-6157] synthesizing module 'decayingRoundTimer' [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/sources_1/new/decayingRoundTimer.v:3]
+	Parameter MAX_TICKS bound to: 16'b0010011100010000 
+	Parameter MIN_TICKS bound to: 16'b0000100111000100 
+	Parameter SPEED_MULTIPLIER bound to: 8'b00111100 
+INFO: [Synth 8-6157] synthesizing module 'clk_5khz' [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/sources_1/new/clk_5khz.v:1]
+	Parameter DIV bound to: 27'b000000000000010011100010000 
+INFO: [Synth 8-6155] done synthesizing module 'clk_5khz' (1#1) [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/sources_1/new/clk_5khz.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ledDimmer' [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/sources_1/new/ledDimmer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pwmGen' [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/sources_1/new/pwmGen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_1khz' [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/sources_1/new/clk_1khz.v:1]
+	Parameter DIV bound to: 27'b000000000000000000111110100 
+INFO: [Synth 8-6155] done synthesizing module 'clk_1khz' (2#1) [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/sources_1/new/clk_1khz.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pwmGen' (3#1) [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/sources_1/new/pwmGen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ledDimmer' (4#1) [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/sources_1/new/ledDimmer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decayingRoundTimer' (5#1) [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/sources_1/new/decayingRoundTimer.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'decayTimerTest' (6#1) [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/sources_1/new/decayTimerTest.v:7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 411.113 ; gain = 154.219
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 411.113 ; gain = 154.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 411.113 ; gain = 154.219
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/constrs_1/new/my_basys3_constraints.xdc]
+Finished Parsing XDC File [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/constrs_1/new/my_basys3_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/EE2026_WS/S1_03_FDP/S1_03_FDP.srcs/constrs_1/new/my_basys3_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/decayTimerTest_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/decayTimerTest_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 745.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 745.590 ; gain = 488.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 745.590 ; gain = 488.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 745.590 ; gain = 488.695
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "SLOW_CLOCK" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SLOW_CLOCK" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ticksPerLED" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LEDsLeft" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 745.590 ; gain = 488.695
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   3 Input     14 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 38    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module decayTimerTest 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module clk_5khz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_1khz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module pwmGen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module decayingRoundTimer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   3 Input     14 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 36    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "bruh/_5khzclk/SLOW_CLOCK" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bruh/_leddimmer/_/_/SLOW_CLOCK" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "bruh/ticksPerLED" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bruh/LEDsLeft" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP bruh/_leddimmer/temp_mult, operation Mode is: A*(B:0xff).
+DSP Report: operator bruh/_leddimmer/temp_mult is absorbed into DSP bruh/_leddimmer/temp_mult.
+INFO: [Synth 8-3886] merging instance 'bruh/ticksPerLED_reg[12]' (FDRE) to 'bruh/ticksPerLED_reg[13]'
+INFO: [Synth 8-3886] merging instance 'bruh/ticksPerLED_reg[13]' (FDRE) to 'bruh/ticksPerLED_reg[14]'
+INFO: [Synth 8-3886] merging instance 'bruh/ticksPerLED_reg[14]' (FDRE) to 'bruh/ticksPerLED_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bruh/ticksPerLED_reg[15] )
+WARNING: [Synth 8-3332] Sequential element (bruh/totalTicksInRound_reg[3]) is unused and will be removed from module decayTimerTest.
+WARNING: [Synth 8-3332] Sequential element (bruh/totalTicksInRound_reg[2]) is unused and will be removed from module decayTimerTest.
+WARNING: [Synth 8-3332] Sequential element (bruh/totalTicksInRound_reg[1]) is unused and will be removed from module decayTimerTest.
+WARNING: [Synth 8-3332] Sequential element (bruh/totalTicksInRound_reg[0]) is unused and will be removed from module decayTimerTest.
+WARNING: [Synth 8-3332] Sequential element (bruh/ticksPerLED_reg[15]) is unused and will be removed from module decayTimerTest.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 745.590 ; gain = 488.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ledDimmer   | A*(B:0xff)  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 782.090 ; gain = 525.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 803.090 ; gain = 546.195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 804.910 ; gain = 548.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 804.910 ; gain = 548.016
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 804.910 ; gain = 548.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 804.910 ; gain = 548.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 804.910 ; gain = 548.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 804.910 ; gain = 548.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 804.910 ; gain = 548.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |   127|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |    84|
+|5     |LUT2    |    98|
+|6     |LUT3    |   227|
+|7     |LUT4    |    43|
+|8     |LUT5    |    15|
+|9     |LUT6    |    31|
+|10    |FDRE    |   126|
+|11    |FDSE    |    20|
+|12    |IBUF    |     3|
+|13    |OBUF    |    16|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------------+-------------------+------+
+|      |Instance       |Module             |Cells |
++------+---------------+-------------------+------+
+|1     |top            |                   |   793|
+|2     |  bruh         |decayingRoundTimer |   751|
+|3     |    _5khzclk   |clk_5khz           |    45|
+|4     |    _leddimmer |ledDimmer          |   504|
+|5     |      _        |pwmGen             |    92|
+|6     |        _      |clk_1khz           |    45|
++------+---------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 804.910 ; gain = 548.016
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 804.910 ; gain = 213.539
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 804.910 ; gain = 548.016
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 131 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 804.910 ; gain = 561.000
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/EE2026_WS/S1_03_FDP/S1_03_FDP.runs/synth_1/decayTimerTest.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file decayTimerTest_utilization_synth.rpt -pb decayTimerTest_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 804.910 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 24 01:23:14 2025...
