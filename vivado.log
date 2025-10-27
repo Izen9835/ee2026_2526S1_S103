@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Oct 10 10:26:20 2025
+# Process ID: 25460
+# Current directory: C:/Users/e1398615/OneDrive - National University of Singapore/Documents/GitHub/ee2026_2526S1_S103
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19976 C:\Users\e1398615\OneDrive - National University of Singapore\Documents\GitHub\ee2026_2526S1_S103\S1_03_FDP.xpr
+# Log file: C:/Users/e1398615/OneDrive - National University of Singapore/Documents/GitHub/ee2026_2526S1_S103/vivado.log
+# Journal file: C:/Users/e1398615/OneDrive - National University of Singapore/Documents/GitHub/ee2026_2526S1_S103\vivado.jou
+#-----------------------------------------------------------sstart_guiopen_project {C:/Users/e1398615/OneDrive - National University of Singapore/Documents/GitHub/ee2026_2526S1_S103/S1_03_FDP.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/e1398615/OneDrive - National University of Singapore/Documents/GitHub/ee2026_2526S1_S103'
+INFO: [Project 1-313] Project file moved from 'C:/EE2026_WS/S1_03_FDP' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/e1398615/OneDrive - National University of Singapore/Documents/GitHub/ee2026_2526S1_S103/S1_03_FDP.ip_user_files', nor could it be found using path 'C:/EE2026_WS/S1_03_FDP/S1_03_FDP.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+IINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.oopen_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 808.609 ; gain = 52.969
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+CRITICAL WARNING: [filemgmt 20-730] Could not find a top module in the fileset sources_1.
+Resolution: With the gui up, review the source files in the Sources window. Use Add Sources to add any needed sources. If the files are disabled, enable them. You can also select the file and choose Set Used In from the pop-up menu. Review if they are being used at the proper points of the flow.
+ERROR: [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 10 10:50:32 2025...
