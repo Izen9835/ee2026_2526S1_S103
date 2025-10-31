@@ -88,6 +88,7 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/Game_logic.v">
+      <File Path="$PSRCDIR/sources_1/new/Bop_It_Instructions_Display.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -133,6 +134,7 @@
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="Game_logic"/>
+        <Option Name="TopModule" Val="Bop_It_Instructions_Display"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
