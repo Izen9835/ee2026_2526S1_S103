@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Oct 31 08:24:47 2025
+# Process ID: 18276
+# Current directory: C:/Users/seant/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4592
+# Log file: C:/Users/seant/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/seant/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/seant/Downloads/EE2026/Project/ee2026_2526S1_S103/S1_03_FDP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 786.789 ; gain = 99.992
+update_compile_order -fileset sources_1
+close [ open C:/Users/seant/Downloads/EE2026/Project/ee2026_2526S1_S103/S1_03_FDP.srcs/sources_1/new/Game_logic.v w ]
+add_files C:/Users/seant/Downloads/EE2026/Project/ee2026_2526S1_S103/S1_03_FDP.srcs/sources_1/new/Game_logic.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/seant/Downloads/EE2026/Project/ee2026_2526S1_S103/S1_03_FDP.srcs/sources_1/new/flag_logic.v w ]
+add_files C:/Users/seant/Downloads/EE2026/Project/ee2026_2526S1_S103/S1_03_FDP.srcs/sources_1/new/flag_logic.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/seant/Downloads/EE2026/Project/ee2026_2526S1_S103/S1_03_FDP.srcs/sources_1/new/lives_update_logic.v w ]
+add_files C:/Users/seant/Downloads/EE2026/Project/ee2026_2526S1_S103/S1_03_FDP.srcs/sources_1/new/lives_update_logic.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/seant/Downloads/EE2026/Project/ee2026_2526S1_S103/S1_03_FDP.srcs/sources_1/new/score_update_logic.v w ]
+add_files C:/Users/seant/Downloads/EE2026/Project/ee2026_2526S1_S103/S1_03_FDP.srcs/sources_1/new/score_update_logic.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/seant/Downloads/EE2026/Project/ee2026_2526S1_S103/S1_03_FDP.srcs/sources_1/new/states.v w ]
+add_files C:/Users/seant/Downloads/EE2026/Project/ee2026_2526S1_S103/S1_03_FDP.srcs/sources_1/new/states.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/seant/Downloads/EE2026/Project/ee2026_2526S1_S103/S1_03_FDP.srcs/sources_1/new/test.v] -no_script -reset -force -quiet
+remove_files  C:/Users/seant/Downloads/EE2026/Project/ee2026_2526S1_S103/S1_03_FDP.srcs/sources_1/new/test.v
+file delete -force C:/Users/seant/Downloads/EE2026/Project/ee2026_2526S1_S103/S1_03_FDP.srcs/sources_1/new/test.v
+archive_project C:/Users/seant/Downloads/EE2026/Project/S1_03_FDP.xpr.zip -temp_dir C:/Users/seant/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18276-SEAN-SURFACE -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/seant/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18276-SEAN-SURFACE' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/seant/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18276-SEAN-SURFACE/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/seant/Downloads/EE2026/Project/S1_03_FDP.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project C:/Users/seant/Downloads/EE2026/Project/S1_03_FDP.xpr.zip -temp_dir C:/Users/seant/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18276-SEAN-SURFACE -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/seant/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18276-SEAN-SURFACE' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/seant/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18276-SEAN-SURFACE/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'

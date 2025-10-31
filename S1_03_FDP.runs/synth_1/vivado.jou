@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Oct 31 09:39:58 2025
+# Process ID: 23928
+# Current directory: C:/EE2026_WS/S1_03_FDP/S1_03_FDP.runs/synth_1
+# Command line: vivado.exe -log Game_logic.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Game_logic.tcl
+# Log file: C:/EE2026_WS/S1_03_FDP/S1_03_FDP.runs/synth_1/Game_logic.vds
+# Journal file: C:/EE2026_WS/S1_03_FDP/S1_03_FDP.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Game_logic.tcl -notrace
